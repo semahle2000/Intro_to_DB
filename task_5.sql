@@ -1,9 +1,9 @@
 USE alx_book_store;
 
 -- Insert a new customer into the customers table
-UPDATE customers
-SET customer_name = 'Cole Baidoo', email = 'cbaidoo@sandtech.com', address = '123 Happiness Ave.'
-WHERE customer_id = 1;
+INSERT INTO customers (customer_id, customer_name, email, address)
+VALUES (1, 'Cole Baidoo', 'cbaidoo@sandtech.com', '123 Happiness Ave.');
 
--- Select all rows from the customers table to verify the insertion
+
+--Displaying the data on the database customers
 SELECT * FROM customers;
